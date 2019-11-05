@@ -54,10 +54,23 @@ static void		test_ft_bzero(void)
 	printf("ft_bzero: %s\n", (is_zero(test, 100) ? "Failed" : "Success"));
 }
 
+static void		test_ft_strlen(void)
+{
+	const char *s = "This is the string to test.";
+	size_t mine;
+	size_t theirs;
+
+	printf("%s", "testing ft_strlen...\n");
+	mine = ft_strlen(s);
+	theirs = strlen(s);
+	printf("ft_strlen: %s\n", (mine == theirs) ? "Success" : "Failed");
+}
+
 int				main(void)
 {
 	test_isall();
 	test_ft_memset();
 	test_ft_bzero();
+	test_ft_strlen();
 	return (0);
 }
