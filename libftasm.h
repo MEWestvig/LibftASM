@@ -14,5 +14,10 @@ char			ft_tolower(int c);
 void			*ft_memset(void *dst, int c, size_t size);
 void			*ft_bzero(void *dst, size_t size);
 size_t			ft_strlen(const char *s);
+char 			*ft_strcat(char *s1, const char *s2);
+void 			*ft_memcpy(void *dst, const void *src, size_t n);
+int				ft_puts(const char *s);
+char 			*ft_strdup(const char *s1);
+void			ft_cat(const int fd);
 
 #endif

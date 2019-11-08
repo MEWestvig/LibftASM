@@ -1,0 +1,1 @@
+This is a testing file for ft_cat to use and print out whatever it contains.
